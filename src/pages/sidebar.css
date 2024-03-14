@@ -1,0 +1,52 @@
+/* Custom CSS for the sidebar */
+#sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-top: 20px;
+    background-color: #343a40; /* Sidebar background color */
+    color: #ffffff; /* Text color */
+  }
+  
+  #sidebar ul.nav li {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #4e545c; /* Divider line color */
+  }
+  
+  #sidebar ul.nav li a {
+    color: #ffffff; /* Link text color */
+    text-decoration: none;
+  }
+  
+  #sidebar ul.nav li a:hover {
+    background-color: #495057; /* Hover background color */
+  }
+  
+  .main-content {
+    margin-left: 250px; /* Adjust this value to match the sidebar width */
+    padding: 20px;
+  }
+
+  #mobile-open-collapse{
+    display: none;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .sidebar{
+      display: none;
+    }
+
+    #mobile-open-collapse{
+      display: block;
+    }
+  }
+
+  #mobile-close-collapse{
+    width: 20px;
+    z-index: 99999;
+    display: none;
+  }
